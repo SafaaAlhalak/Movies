@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--link swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
+</head>
+<body>
+
+      <header>
+        <div class="header-items">
+            <a href="#" class="logo">iMovies</a>
+            <ul class="nav">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="movies.html">Trending</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="movies.html#movies">Popular</a></li>
+                <li><a href="movies.html#cinemas">Cinemas</a></li>
+            </ul>
+            
+        </div>
+    </header>
+
+
+
+      <!--section home-->
+      <section class="home swiper" id="home">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+        centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide class="container1">
+                <img src="images/home1.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Guardians of the Galaxy <br> Volume2
+                    </h1>
+                    <div class="button">
+                        <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                        <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="container1">
+                <img src="images/home2.png" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Thor: <br>Love and Thunder
+                    </h1>
+                    <div class="button">
+                        <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                        <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="container1">
+                <img src="images/home3.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Spider-Man: <br> No Way Home
+                    </h1>
+                    <div class="button">
+                        <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                        <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="container1">
+                <img src="images/home4.png" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Avengers: <br>End Game
+                    </h1>
+                    <div class="button">
+                        <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                        <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+                    </div>
+                </div>
+            </swiper-slide>
+            
+        </swiper-container>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <!-- Movies -->
+      <div class="movies" id="movies">
+        <h2 class="heading">Most Popular Movies</h2>
+        <!-- Movies container-->
+        <div class="movies-container1">
+            <!-- Box template-->
+            <!-- Box 1-->
+            <div class="box" id="movie-box-template">
+                <div class="box-img">
+                    <img src="" alt=""> 
+                </div>
+                <h3></h3> 
+                <span></span> 
+            </div>
+        </div>
+         
+      </div>
+
+      <!-- Popup container -->
+    <div class="popup-container">
+        <!-- Content for the popup card will be injected here -->
+    </div>
+
+      <h2 class="heading">
+        Now Showing at Cinemas
+      </h2>
+
+      <section id="cinemas">
+        <!-- Cinemas and movie lists will be dynamically loaded here -->
+    </section>
+
+    <footer class="footer">
+        <p>CopyWrite &copy; 2024 All rights reserved  </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>  
+    <script src="script.js"></script>
+</body>
+</html>
